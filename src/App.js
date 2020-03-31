@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Card from './Card';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Card
+				image='https://placeimg.com/640/480/any'
+				title='How To Make Interactive ReactJS Forms'
+				description="Let's write an interactive form with React"
+			/>
+			<Card
+				image='https://placeimg.com/640/480/any'
+				title='Babelify Your JavaScript Code'
+				description='Babel makes JavaScript code browser-compatible'
+			/>
+			<Card
+				image='https://placeimg.com/640/480/any'
+				title='Javascript Basics Before You Learn React'
+				description='Learn the prerequisites of React fast'
+			/>
+		</div>
+	);
 }
 
 export default App;
